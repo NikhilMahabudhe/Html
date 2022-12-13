@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const counter = (function () {
+            let counter = 0;
+            return function () {
+                counter++;
+                return counter
+            }
+        })();
+        function display() {
+            document.getElementById("show").innerHTML = counter;
+        }
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="click to increse" onclick="display()" name="" id="cartButton">
+    <div id="show"></div>
+
+</body>
+
+</html>
