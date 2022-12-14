@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var fruits = [];
+        count = 0;
+        function addFruits() {
+
+            var selected = document.getElementById("items1").value;
+            fruits.push(selected);
+            document.getElementById("items2").innerHTML = fruits;
+            count++;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="items1">
+
+    <input type="button" name="" id="" onclick="addFruits()" class="fruits-add" value="Add fruit">
+    <ol id="items2">
+
+    </ol>
+</body>
+
+</html>
