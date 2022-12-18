@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+         .main{
+            position: absolute;
+            top: 37%;
+            left: 34%;
+            border: 2px solid black;
+            width: 500px;
+            height: 200px;
+            text-align: center;
+        } 
+        .watch{
+            margin-top: 20px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body onload="start()" >
+    
+        <div class="main">
+            <div class="watch">
+            </div>
+            <input type="button" value="stop" onclick="clearInterval(start)" name="" id="">
+            <input type="button" value="Start" onclick="setInterval(start,1000)" name="" id="">
+        </div>
+       
+    
+    
+</body>
+
+
+</html>
+<script>
+    // var date1=setInterval(start ,1000);
+     function start(){
+        var time1 =new Date();
+     document.querySelector(".watch").innerHTML=time1.toLocaleTimeString();
+     
+     };
+     
+
+</script> 
